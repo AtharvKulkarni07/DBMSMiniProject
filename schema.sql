@@ -7,7 +7,7 @@
 -- ============================================================================
 
 CREATE DATABASE IF NOT EXISTS disease_surveillance
-  CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE disease_surveillance;
 
 -- ----------------------------------------------------------------------------

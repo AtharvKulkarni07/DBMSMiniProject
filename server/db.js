@@ -60,7 +60,7 @@ export async function tryConnectMySQL() {
       password: dbConfig.password,
       port: dbConfig.port,
     });
-    await tempConn.query(`CREATE DATABASE IF NOT EXISTS \`${dbConfig.database}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;`);
+    await tempConn.query(`CREATE DATABASE IF NOT EXISTS \`${dbConfig.database}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`);
     await tempConn.end();
 
     // Now initialize pool with target database
